@@ -1,0 +1,41 @@
+% Lent term 2018
+
+2018-02-08 14:00 Mathematical Biology; CMS core; Q1, Q2
+2018-02-08 15:00 Mathematical Biology; CMS core; Q3, Q4
+2018-02-08 16:00 Mathematical Biology; CMS core; Q5, Q6
+2018-02-09 14:30 Mathematical Biology; CMS core; Q7, Q8
+
+2018-02-15 14:00 Numerical Analysis; CMS core; SJ1, SJ2
+2018-02-15 15:00 Numerical Analysis; CMS core; SJ3, SJ4
+2018-02-15 16:00 Numerical Analysis; CMS core; SJ5, SJ6
+2018-02-16 14:30 Numerical Analysis; CMS core; SJ7, SJ8
+
+2018-02-22 14:00 Mathematical Biology; CMS core; Q1, Q2
+2018-02-22 15:00 Mathematical Biology; CMS core; Q3, Q4
+2018-02-22 16:00 Mathematical Biology; CMS core; Q5, Q6
+2018-02-23 14:30 Mathematical Biology; CMS core; Q7, Q8
+
+2018-02-28 14:00 Numerical Analysis; CMS core; SJ1, SJ2
+2018-02-28 15:00 Numerical Analysis; CMS core; SJ3, SJ4
+2018-02-28 16:00 Numerical Analysis; CMS core; SJ5, SJ6
+2018-02-29 14:30 Numerical Analysis; CMS core; SJ7, SJ8
+
+2018-03-08 14:00 Mathematical Biology; CMS core; Q1, Q2
+2018-03-08 15:00 Mathematical Biology; CMS core; Q3, Q4
+2018-03-08 16:00 Mathematical Biology; CMS core; Q5, Q6
+2018-03-09 14:30 Mathematical Biology; CMS core; Q7, Q8
+
+2018-04-24 10:00 Numerical Analysis; CMS core; SJ1, SJ2
+2018-04-24 11:00 Numerical Analysis; CMS core; SJ3, SJ4
+2018-04-24 14:00 Numerical Analysis; CMS core; SJ5, SJ6
+2018-04-24 15:00 Numerical Analysis; CMS core; SJ7, SJ8
+
+2018-04-26 10:00 Mathematical Biology; CMS core; Q1, Q2
+2018-04-26 11:00 Mathematical Biology; CMS core; Q3, Q4
+2018-04-26 14:00 Mathematical Biology; CMS core; Q5, Q6
+2018-04-26 15:00 Mathematical Biology; CMS core; Q7, Q8
+
+% Revision supervisions
+
+
+
