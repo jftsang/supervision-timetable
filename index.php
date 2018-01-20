@@ -131,7 +131,7 @@ foreach($supervisions as &$supervision) {
 
 <p><a href="mailto:jmft2@cam.ac.uk">Email me</a></p>
 <p><a href="timetable.txt">Raw timetable</a></p>
-<p><a href="https://github.com/jftsang/supervision-timetable/">Source code</a></p>
+<p><a href="https://github.com/jftsang/supervision-timetable/">Source code</a> on GitHub</p>
 <p><a href="..">Home</a></p>
 </body>
 </html>
