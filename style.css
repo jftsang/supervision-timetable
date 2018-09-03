@@ -1,23 +1,17 @@
-html, body {
-    width: 99%;
-    background-color: beige;
-}
-
-table {
+table.timetable {
     border-collapse: collapse;
     border-spacing: 0px;
 }
 
 th,td {
     text-align: right;
-    font-family: monospace;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-td {
+tr {
     border-bottom: 1px solid #888888;
     border-left: 0px;
     border-right: 0px;
@@ -29,8 +23,8 @@ a {
     color: black;
 }
 
-.IntegrableSystems {
-    background-color: #88FF88;
+.DropIn {
+    background-color: silver;
 }
 
 .DynamicalSystems {
@@ -45,19 +39,28 @@ a {
     background-color: #4488FF;
 }
 
-.MathematicalBiology {
-    background-color: #60ff20;
-    color: #a000e0;
+.IntegrableSystems {
+    background-color: #88FF88;
 }
 
-.NumericalAnalysis {
+.MathematicalBiology {
+    background-color: #30a000;
+    color: #DCD0FF;
+}
+
+.NumericalAnalysisI {
     background-color: red;
-    color: black;
+    color: gold;
 }
 
 .QuantumMechanics {
     background-color: #660066;
     color: #DCD0FF;
+}
+
+.STEP {
+    background-color: silver;
+    color: black;
 }
 
 .VariationalPrinciples {

@@ -20,7 +20,7 @@ while($line = fgets($file)) {
 function cmp($a,$b) {
     return $a['time'] > $b['time'];
 }
-usort($supervisions,'cmp');
+usort($supervisions, 'cmp');
 
 /* Extract the list of people, and their CRSIDs */
 foreach($supervisions as &$supervision) {
@@ -62,24 +62,42 @@ function weeksbetween($time1,$time2) {
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="/style.css"/>
 <title>My supervision timetable</title>
 </head>
 <body>
+
+<div id="content">
+
 <h1>My supervision timetable</h1>
 
-<p>Today is <?=date('D d M Y')?>.</p>
+<p style="text-align: center;">Today is <?=date('D d M Y')?>.</p>
 
-<p>Unless we arrange otherwise, please hand work in to my Queens' pigeonhole, by 
-2pm on the Sunday before the supervision. I shall mark it and return it there 
-by 5pm on the day before the supervision.</p>
+<p>Please feel free to swap supervision slots with each other. <a
+href="mailto:jmft2@cam.ac.uk">Email me</a> to let me know, and <em>please copy
+in everyone else who's involved in that transaction</em>: this helps me know that
+you all assent to the swap.</p>
 
-<table style="width: 80%">
+<p>I'm not meant to meddle with supervision <em>pairings</em> &mdash; talk to
+your DoS about those.</p>
+
+<!--
+<p><strong>Mathematical Biology</strong> Please hand in your work by Sunday 2pm
+before each supervision to my Queens' pigeonhole. I will return it the day
+before the supervision; please collect it and bring it with you.</p>
+
+<p><strong>Numerical Analysis I</strong> For the first two supervisions, please
+hand in your work by Tuesday 5pm before the first two supervisions. I will
+return it the day before the supervision; please collect it and bring it with
+you.</p>
+-->
+
+<table class="timetable">
 <thead>
 <tr>
-    <th style="padding-right: 10px;">Day</th>
-    <th style="padding-left: 10px; padding-right: 10px;"> Date</th> 
+    <th style="padding-right: 10px;"> Date</th> 
     <th>Time</th>
-    <th>Time from now</th>
+    <th style="text-align: center;">Time<br/>from now</th>
     <th style="text-align: left;">Course</th>
     <th style="text-align: left;">Location</th>
     <th style="text-align: left;">People</th>
@@ -98,8 +116,7 @@ foreach($supervisions as &$supervision) {
     /* Otherwise, print the details of this supervision in table form. */
     $cn = str_replace(' ', '', $supervision['course']);
     printf('<tr class="%s">', $cn);
-    printf('<td style="text-align: right;">%s</td>', date('D',$supervision['time']));
-    printf('<td style="text-align: right;">%s</td>', date('d M Y',$supervision['time']));
+    printf('<td style="text-align: right;">%s</td>', date('D\&\n\b\s\p;d\&\n\b\s\p;M\&\n\b\s\p;Y',$supervision['time']));
     printf('<td>%s</td>', date('H:i',$supervision['time']));
         printf('<td style="text-align: right;">%s</td>', 
             timeuntil($supervision['time'])
@@ -123,15 +140,21 @@ foreach($supervisions as &$supervision) {
     printf('</tr>');
     printf("\n");
 }
-
-// printf("The current time is %d\n",time());
 ?>
 </tbody>
 </table>
 
-<p><a href="mailto:jmft2@cam.ac.uk">Email me</a></p>
-<p><a href="timetable.txt">Raw timetable</a></p>
-<p><a href="https://github.com/jftsang/supervision-timetable/">Source code</a> on GitHub</p>
-<p><a href="..">Home</a></p>
+<div style="margin-top: 18px;">
+<table style="border: none; margin-left: auto; margin-right: auto;"><tbody>
+<tr>
+<td><a href="mailto:jmft2@cam.ac.uk">Email me</a></td>
+<td><a href="timetable.txt">Raw timetable</a></td>
+<td><a href="https://github.com/jftsang/supervision-timetable/">Plagiarise this page</a><br/>
+(see also <a href="https://www.youtube.com/watch?v=IL4vWJbwmqM">the song!</a>)</td>
+<td><a href="..">Home</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
 </body>
 </html>
